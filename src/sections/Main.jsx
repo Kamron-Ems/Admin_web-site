@@ -3,6 +3,10 @@ import Header from '../components/Headers'
 import { FaFacebookF , FaInstagram } from 'react-icons/fa'
 import { FiTwitter } from 'react-icons/fi'
 import OurChart from '../components/OurChart'
+import { TbUsers } from "react-icons/tb";
+import { BiUser } from 'react-icons/bi'
+// import { BiUserX } from 'react-icons/bi'
+// import { CgUser } from 'react-icons/cg'
 
 function Main() {
   return (
@@ -102,7 +106,83 @@ function Main() {
         <div id='top' 
           className='bg-slate-100 p-8 w-full rounded-xl flex flex-col justify-center items-center gap-6 h-fit '
         >
-          <div id='image-box' ></div>
+          <div id='image-box' 
+            className='w-full flex flex-col justify-center items-center gap-4 '
+          >
+            <BiUser className=' rounded-full w-[100px] h-[100px] ' />
+            <div className='flex flex-col justify-center items-center' >
+              <h1 className='text-black font-bold text-2xl ' >Jack Anderson</h1>
+              <p className='text-slate-700 text-lg ' >@jack_anderson</p>
+            </div>
+          </div>
+          {/* followers-info section */}
+          <div id='followers-info' 
+            className='flex justify-between items-center gap-8 w-full' 
+          >
+            {/* first One item */}
+            <div className='flex flex-col justify-center items-start ' >
+              <h1 className='text-2xl text-black font-semibold ' >193</h1>
+            <p className='' >Posts</p>
+            </div>
+            {/* Second One item */}
+            <div className='flex flex-col justify-center items-start ' >
+              <h1 className='text-2xl text-black font-semibold ' >17,536</h1>
+            <p className='' >Followers</p>
+            </div>
+            {/* Third One item */}
+            <div className='flex flex-col justify-center items-start ' >
+              <h1 className='text-2xl text-black font-semibold ' >274</h1>
+            <p className='' >Following</p>
+            </div>
+          </div>
+        </div>
+
+        {/* bottom section */}
+
+        <div
+          id='bottom'
+          className='bg-black w-full h-full p-6 rounded-xl flex flex-col justify-center items-center gap-8'
+        >
+          <div className='flex md:flex-row flex-col justify-between items-center w-full gap-2 ' >
+            <h1 className='text-white text-md '> Facebook Campaign </h1>
+            <button className='bg-green-600 text-white px-6 py-1 rounded-xl cursor-pointer text-md ' >Active</button>
+          </div>
+          {/* List Types Followers */}
+          <div className='flex justify-between items-center w-full h-fit flex-col md:flex-row gap-4 ' >
+            {/* First type followers */}
+            <div className=' flex flex-col justify-center items-start gap-1 ' >
+              <h1 className='text-white text-2xl font-bold ' >1,123</h1>
+              <p className='text-slate-200 text-sm ' >Followers Today</p>
+            {/* Second type followers */}
+            </div>
+            <div className=' flex flex-col justify-center items-start gap-1 ' >
+              <h1 className='text-white text-2xl font-bold ' >50,000</h1>
+              <p className='text-slate-200 text-sm ' >Followers Goals</p>
+            {/* Third type followers */}
+            </div>
+            <div className=' flex flex-col justify-center items-start gap-1 ' >
+              <h1 className='text-white text-2xl font-bold ' >10,000</h1>
+              <p className='text-slate-200 text-sm ' >Followers Online</p>
+            </div>
+          </div>
+          {/* List Image Followers */}
+          <div className='flex md:flex-row flex-col justify-between items-center w-full ' >
+            {/* List Icons users */}
+            <div className='flex -space-x-4 w-full md:justify-start md:space-x-reverse justify-center items-start ' >
+              <BiUser className='w-10 h-10 text-green-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-red-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-yellow-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-blue-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-teal-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-orange-600 border-2 border-white rounded-full ' />
+              <BiUser className='w-10 h-10 text-lime-600 border-2 border-white rounded-full ' />
+            </div>
+
+            <div className='flex flex-col justify-center items-center gap-1 ' >
+              <h1 className='text-white text-xl font-bold ' >+7,294</h1>
+              <p className='text-slate-200 text-sm ' >All Time</p>
+            </div>
+          </div>
         </div>
       </div>
 
