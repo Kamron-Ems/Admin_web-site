@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/Headers'
 import { FaFacebookF , FaInstagram } from 'react-icons/fa'
 import { FiTwitter } from 'react-icons/fi'
@@ -19,12 +18,12 @@ function Main() {
       >
         <div
           id='left'
-          className='col-span-2 p-2 gap-3 flex flex-col justify-between items-center h-full'
+          className='col-span-2 p-2 gap-3 flex flex-col justify-between items-center h-full '
         >
           {/* three grid layout */}
 
           <div
-            className='grid grid-cols-1 lg:grid-cols-3 gap-4 w-full mb-4'
+            className='grid grid-cols-1 lg:grid-cols-3 gap-4 w-full mb-4 '
           >
             {/* first One */}
             <div 
@@ -64,7 +63,7 @@ function Main() {
                     <p className='text-slate-700' > Followers </p>
                   </div>
                   <div className='bg-red-400 hover:bg-red-500 cursor-pointer text-black p-3 rounded-full ' >
-                    <FaFacebookF className='w-[30px] h-[30px] ' />
+                    <FaInstagram className='w-[30px] h-[30px] ' />
                   </div>
                 </div>
             </div>
@@ -86,7 +85,7 @@ function Main() {
                     <p className='text-slate-700' > Followers </p>
                   </div>
                   <div className='bg-green-400 hover:bg-green-500 cursor-pointer text-black p-3 rounded-full ' >
-                    <FaFacebookF className='w-[30px] h-[30px] ' />
+                    <FiTwitter className='w-[30px] h-[30px] ' />
                   </div>
                 </div>
             </div>
@@ -94,7 +93,8 @@ function Main() {
           </div>
       {/* grid layout ends here */}
 
-      <OurChart/>
+      <OurChart  />
+
         </div>
       {/* left section ends here */}
 
@@ -168,7 +168,7 @@ function Main() {
           {/* List Image Followers */}
           <div className='flex md:flex-row flex-col justify-between items-center w-full ' >
             {/* List Icons users */}
-            <div className='flex -space-x-4 w-full md:justify-start md:space-x-reverse justify-center items-start ' >
+            <div className='flex -space-x-4 w-full md:justify-start rt1:space-y-reverse gap-1 justify-center items-start ' >
               <BiUser className='w-10 h-10 text-green-600 border-2 border-white rounded-full ' />
               <BiUser className='w-10 h-10 text-red-600 border-2 border-white rounded-full ' />
               <BiUser className='w-10 h-10 text-yellow-600 border-2 border-white rounded-full ' />
@@ -192,3 +192,5 @@ function Main() {
 }
 
 export default Main
+
+
